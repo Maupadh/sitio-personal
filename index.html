@@ -7,15 +7,62 @@
         <title>Mauricio Padilla</title>
 
         <link id="page_favicon" href="../sitio-personal/imgs/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="../sitio-personal/css/main.css" />
+        <link rel="stylesheet" href="../sitio-personal/css/body-index.css">
+        <link rel="stylesheet" href="../sitio-personal/css/footer.css">
+        <script src="../sitio-personal/js/main.js"></script>
     
     </head>
 
     <body>
+        <div class="grid-container-head">
+            <div id="logo" class="grid-item-head">MAPH</div>
+            <div id="home" class="grid-item-head">Home</div>
+            <div id="portfolio" class="grid-item-head">Portfolio</div>
+            <div id="about" class="grid-item-head dropdown">About Me</div>
+            <div id="MP" class="grid-item-head">Mauricio Padilla</div>
+            <div id="search" class="grid-item-head"><i style="opacity: .4" class="fas fa-search"></i><span style="opacity: .4"> Search</span></div>
+        </div>
 
-    
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+                <img src="https://picsum.photos/1920/1080?image=1033" style="width:100%">
+                <div class="text">**Imagen a cambiar**</div>
+            </div>
+              
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://picsum.photos/1920/1080?image=1076" style="width:100%">
+                <div class="text">**Imagen a cambiar**</div>
+            </div>
+              
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://picsum.photos/1920/1080?image=985" style="width:100%">
+                <div class="text">**Imagen a cambiar **</div>
+            </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+
+
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+
     </body>
 </html>
