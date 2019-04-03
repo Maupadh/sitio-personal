@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   height: 100%;
@@ -70,14 +73,17 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
   height: 50px;
-  width: 100%;
 }
 .grid-item {
   border: 0px solid black;
   padding: 17px;
+  width: 100%;
 }
 .MAPH {
   font-weight: 100;
@@ -85,15 +91,84 @@ body {
   padding: 8px 8px;
 }
 .portfolio {
-  text-align: right;
+  text-align: center;
+  width: 550px;
+}
+.portfolio:hover{
+  background-color: #1a1a1a21;
 }
 .about-me {
   text-align: center;
+  justify-content: center;
+  width: 550px;
+}
+.about-me:hover {
+  background-color: #1a1a1a21;
 }
 .mau-pad {
-  text-align: left;
+  text-align: center;
+  width: 550px;
+}
+.mau-pad:hover {
+  background-color: #1a1a1a21;
 }
 .search {
   text-align: right;
   font-weight: 200;
+  font-size: 1em;
+}
+a:link, a:visited, a:hover, a:active{
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+  .menu-bar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    z-index: 1;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .landing {
+    line-height: .90;
+  }
+  .mauricio {
+    font-size: 5em;
+    font-weight: 200;
+  }
+  .padilla {
+    font-weight: bolder;
+    padding-left: 5px;
+    font-size: 6em;
+  }
+  .MAPH {
+    width: 100%;
+    height: 10%;
+  }
+  .portfolio {
+    padding: 30px;
+    width: 100%;
+    text-align: right;
+  }
+  .about-me {
+    padding: 30px;
+    width: 100%;
+    text-align: right;
+  }
+  .mau-pad {
+    padding: 30px;
+    width: 100%;
+    text-align: right;
+  }
+  .search {
+    height: 75%;
+    width: 100%;
+    padding-top: 450%
+    
+  }
 }
